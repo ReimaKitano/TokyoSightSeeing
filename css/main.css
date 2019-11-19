@@ -8,21 +8,28 @@ body {
 }
 
 h1 {
-    position: relative;
-    padding: 0.6em;
-    background: #e0edff;
-    margin-bottom: 40px;
+  position: relative;
+  padding-left: 25px;
 }
 
+h1:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+}
 h1:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 30px;
-    border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
-    width: 0;
-    height: 0;
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
 }
 
 h2 {
